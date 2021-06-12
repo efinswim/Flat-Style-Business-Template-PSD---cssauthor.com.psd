@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Пошла страница */
+body {
+    font-family: 'Arimo', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* CLEARFIX */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Стилизация шапки */
+header {
+    height: 87px;
+    background-color: #55adb7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 183px;
+}
+.logo > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Cherry Swash', cursive;
+}
+.menu {
+    margin-right: 136px;
+}
+.menu > ul {
+    display: flex;
+}
+.menu > ul > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #dce3e4;
+    margin: 12px;
+    padding: 5px;
+}
+.menu > ul > li {
+    color: #dce3e4;
+}
+/* OWL CAROUSEL */
+.item {
+    position: relative;
+}
+.item > p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 44px;
+    font-weight: bold;
+    color: #e4e4e4;
+    text-align: center;
+}
+.item > a {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-decoration: none;
+    color: #e4e4e4;
+    text-align: center;
+    border-radius: 3px;
+    border: solid 3px #afb1b4;
+    padding: 12px 41px 12px 41px;
+}
+/* Главный раздел */
+.aboutmeblock > p {
+    font-size: 30px;
+    text-align: center;
+    color: #4c505d;
+}
+.aboutmeblock > p:nth-last-of-type(1) {
+    font-size: 14px;
+    text-align: center;
+    color: #4c505d;
+    margin: 40px 200px 40px 200px;
+}
+.iconsabout {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 130px 80px 110px;
+}
+.quote {
+    position: relative;
+    height: 450px;
+    background-color: #00d089;
+}
+.quote > img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quote > span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e4e4e4;
+  position: absolute;
+  top: 17%;
+  left: 60%;
+}
+.quotesfirst {
+    position: absolute;
+    top: 26%;
+    left: 60%;
+    width: 39px;
+    height: 43px;
+    background-color: rgba(255, 255, 255);
+}
+.quotesfirst::before {
+    content: "";
+    width: 0px;
+    height: 0;
+    position: absolute;
+    top: 27px;
+    border-left: 24px solid transparent;
+    border-top: 51px solid rgba(255, 255, 255);
+    transform: rotate(45deg);
+}
+.quotessecond {
+    position: absolute;
+    top: 26%;
+    left: 65%;
+    width: 39px;
+    height: 43px;
+    background-color: rgba(255, 255, 255);
+}
+.quotessecond::before {
+    content: "";
+    width: 0px;
+    height: 0;
+    position: absolute;
+    top: 27px;
+    border-left: 24px solid transparent;
+    border-top: 51px solid rgba(255, 255, 255);
+    transform: rotate(45deg);
+}
+.quote > article {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 90px;
+}
+/* ФОРМА */
+form {
+    position: absolute;
+    top: 196%;
+    left: 33%;
+    border-radius: 50%;
+    border: 1px solid #afb1b4;
+    background-color: #ffffff;
+    padding: 100px;
+}
+form input {
+    width: 275px;
+    height: 50px;
+    outline: inherit;
+    border: solid 1px #d8d8d8;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+form textarea {
+    width: 276px;
+    height: 80px;
+    resize: none;
+    outline: inherit;
+    border: solid 1px #d8d8d8;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+input::placeholder {
+    color: rgba(76, 80, 93, 0.5);
+}
+textarea::placeholder {
+    color: rgba(76, 80, 93, 0.5);
+}
+form button {
+    background: #00d089;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+/* ПОДВАЛ */
+footer {
+    max-width: 1280px;
+    height: 40px;
+    background-color: #00d089;
+}
+footer > span {
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
